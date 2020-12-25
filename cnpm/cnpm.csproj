@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFE9BB4B-E9AE-49AA-A324-B38DD357A07A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cnpm</RootNamespace>
+    <AssemblyName>cnpm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\MOHINHHOA-master\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fDalyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fDalyReport.Designer.cs">
+      <DependentUpon>fDalyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Acount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Acount.Designer.cs">
+      <DependentUpon>Acount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fBill.Designer.cs">
+      <DependentUpon>fBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fDisease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fDisease.Designer.cs">
+      <DependentUpon>fDisease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fMedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fMedical.Designer.cs">
+      <DependentUpon>fMedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fListMediExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fListMediExam.Designer.cs">
+      <DependentUpon>fListMediExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fMediExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fMediExam.Designer.cs">
+      <DependentUpon>fMediExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fPatients.Designer.cs">
+      <DependentUpon>fPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fprescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fprescription.Designer.cs">
+      <DependentUpon>fprescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fReportUseDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fReportUseDrug.Designer.cs">
+      <DependentUpon>fReportUseDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fUnit.Designer.cs">
+      <DependentUpon>fUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fUsage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fUsage.Designer.cs">
+      <DependentUpon>fUsage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\fSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\fSetting.Designer.cs">
+      <DependentUpon>fSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SourceString.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLPhongMachTuDataSet.cs">
+      <DependentUpon>QLPhongMachTuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLPhongMachTuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLPhongMachTuDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Presentation\fDalyReport.resx">
+      <DependentUpon>fDalyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Acount.resx">
+      <DependentUpon>Acount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fBill.resx">
+      <DependentUpon>fBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fDisease.resx">
+      <DependentUpon>fDisease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fMedical.resx">
+      <DependentUpon>fMedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fListMediExam.resx">
+      <DependentUpon>fListMediExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fMediExam.resx">
+      <DependentUpon>fMediExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fPatients.resx">
+      <DependentUpon>fPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fprescription.resx">
+      <DependentUpon>fprescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fReportUseDrug.resx">
+      <DependentUpon>fReportUseDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fSetting.resx">
+      <DependentUpon>fSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fUnit.resx">
+      <DependentUpon>fUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\fUsage.resx">
+      <DependentUpon>fUsage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="QLPhongMachTuDataSet.xsc">
+      <DependentUpon>QLPhongMachTuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLPhongMachTuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLPhongMachTuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLPhongMachTuDataSet.xss">
+      <DependentUpon>QLPhongMachTuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
